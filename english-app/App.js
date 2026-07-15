@@ -1,4 +1,5 @@
 import React from 'react';
+import { I18nManager } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
@@ -12,13 +13,17 @@ import NumberChoiceScreen from './screens/NumberChoiceScreen';
 import NumberTypingScreen from './screens/NumberTypingScreen';
 import NumberSpeakingScreen from './screens/NumberSpeakingScreen';
 
+if (!I18nManager.isRTL) {
+  I18nManager.forceRTL(true);
+}
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <StatusBar style="light" />
-      <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
         <Stack.Screen name="SectionSelect" component={SectionSelectScreen} />
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Flashcards" component={FlashcardScreen} />
