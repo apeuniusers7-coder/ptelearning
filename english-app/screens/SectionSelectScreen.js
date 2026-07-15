@@ -12,7 +12,8 @@ export default function SectionSelectScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Ptelearning</Text>
+        <Text style={styles.headerTitle}>123
+        </Text>
         <Text style={styles.headerSubtitle}>یه بخش رو برای شروع انتخاب کن</Text>
       </View>
 

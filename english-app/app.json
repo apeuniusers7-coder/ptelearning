@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Ptelearning",
-    "slug": "ptelearning",
+    "slug": "pte",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -48,8 +48,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "25a51301-0410-448c-b2e3-3d608ba20988"
+        "projectId": "ed106c24-e621-4b00-b356-730d9d66c535"
       }
-    }
+    },
+    "owner": "ptelearnings-team"
   }
 }
